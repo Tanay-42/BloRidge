@@ -124,13 +124,14 @@ Your request has been recorded. We'll notify you when a match is found.
 
 ## Features
 
-- Validates all blood groups (O-, O+, A-, A+, B-, B+, AB-, AB+)
-- Accepts aliases like "O Negative", "A Positive", etc.
-- Case-insensitive and whitespace-tolerant inputs
-- Prevents duplicate donor registrations
-- Provides instant donor match suggestions during blood requests
+- Supports all 8 major blood groups
+- Accepts inputs like "O Negative", "A Positive", etc.
+- Case-insensitive and trims extra spaces
+- Prevents duplicate donor entries
+- Matches compatible donors instantly during request
+- Simple file-based data storage (donors.txt, receivers.txt)
+- Clean and user-friendly command-line interface
 
----
 
 ## Future Enhancements
 
@@ -146,8 +147,8 @@ Your request has been recorded. We'll notify you when a match is found.
 
 **Tanay Verma**  
 Email: tanayverma42004@gmail.com  
-GitHub: [@tanayverma](https://github.com/tanayverma)  
-LinkedIn: [linkedin.com/in/tanay-verma](https://linkedin.com/in/tanay-verma)
+GitHub: [@tanayverma]([https://github.com/tanayverma](https://github.com/Tanay-42))  
+LinkedIn: [linkedin.com/in/tanay-verma]([https://linkedin.com/in/tanay-verma](https://www.linkedin.com/in/tanay-verma-41482b259/))
 
 ---
 
