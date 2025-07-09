@@ -146,9 +146,9 @@ Your request has been recorded. We'll notify you when a match is found.
 ## Author
 
 **Tanay Verma**  
-Email: tanayverma42004@gmail.com  
-GitHub: [@tanayverma]([https://github.com/tanayverma](https://github.com/Tanay-42))  
-LinkedIn: [linkedin.com/in/tanay-verma]([https://linkedin.com/in/tanay-verma](https://www.linkedin.com/in/tanay-verma-41482b259/))
+📧 Email: tanayverma42004@gmail.com  
+🐙 GitHub: [@Tanay-42](https://github.com/Tanay-42)  
+🔗 LinkedIn: [tanay-verma-41482b259](https://www.linkedin.com/in/tanay-verma-41482b259/)
 
 ---
 
