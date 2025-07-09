@@ -1,34 +1,157 @@
-# 💉 BloRidge - Blood Donation Match System
+# BloRidge - Blood Donation Match System
 
-BloRidge is a real-world C++ console application designed to help donors and receivers connect based on **blood group compatibility**. It handles:
+**BloRidge** is a real-world console-based C++ application that helps match blood donors with receivers based on blood group compatibility.
 
-✅ Donor Registration  
-✅ Blood Request & Auto-Matching  
-✅ Contact Selection from Compatible Donors  
-✅ File-based Data Persistence (donors.txt & receivers.txt)  
-✅ Clean, user-friendly CLI experience
-
----
-
-## 🚀 Features
-
-- 🔄 **Instant Matching:** Matches blood requests to compatible donors in real time
-- 🩸 **Full Blood Group Compatibility** (O-, O+, A-, A+, B-, B+, AB-, AB+)
-- 💾 **Persistent Storage**: All donors and receivers saved in `.txt` files
-- 🔐 **Duplicate Protection**: Prevents re-registration of same donor
-- 📃 **Input Validation**: Case-insensitive, handles both `A+` and `a positive`
-- ✅ **User Experience**: Clean prompts, numbered options, error-proof input
+It provides:
+- Real-time donor matching during blood requests
+- Clean command-line interface
+- File-based data persistence (`donors.txt`, `receivers.txt`)
+- Input validation and duplicate detection
 
 ---
 
-## 💻 How to Run
+## Project Structure
 
-### Requirements:
-- C++ Compiler (e.g., g++)
-- Windows or Linux terminal
+```
+BloRidge/
+├── BloRidge.cpp         # Main source code
+├── donors.txt           # Auto-generated donor records
+├── receivers.txt        # Auto-generated receiver requests
+└── README.md            # Project documentation
+```
 
-### Steps:
+---
+
+## How to Compile and Run
+
+This project is written in standard C++. Use any C++11+ compiler.
+
+### Windows
 
 ```bash
-g++ BloRidge.cpp -o BloRidge.exe    # Compile
-./BloRidge.exe                      # Run
+g++ BloRidge.cpp -o BloRidge.exe
+BloRidge.exe
+```
+
+### Linux / macOS
+
+```bash
+g++ BloRidge.cpp -o BloRidge
+./BloRidge
+```
+
+---
+
+## Sample Usage
+
+### 1. Registering Donors
+
+```
+========== BloRidge: Blood Donation System ==========
+1. Register as Donor
+2. Request Blood
+3. View Donors
+4. Exit
+=======================================================
+Enter choice: 1
+
+Enter your name: Tanay
+
+Valid blood groups: O-, O+, A-, A+, B-, B+, AB-, AB+
+Enter blood group: O+
+Enter contact info (e.g., phone or email): +918767579049
+
+Donor registered successfully!
+```
+
+---
+
+### 2. Requesting Blood
+
+```
+Enter choice: 2
+
+Enter your name: Divya
+
+Valid blood groups: O-, O+, A-, A+, B-, B+, AB-, AB+
+Enter required blood group: AB-
+Enter your contact info (e.g., phone or email): @krx
+
+Searching for compatible donors...
+
+Yes, donor(s) exist! Here are the details:
+---------------------------------------------
+1. Karan [O-], Contact: karan@example.com
+---------------------------------------------
+
+Enter the number of the donor to contact (0 to skip): 1
+
+Contact this donor ASAP: Karan [O-], karan@example.com
+```
+
+---
+
+### 3. Viewing All Donors
+
+```
+Enter choice: 3
+
+Registered Donors:
+---------------------------------------------
+1. Tanay (O+), Contact: +918767579049
+2. Karan (O-), Contact: karan@example.com
+---------------------------------------------
+```
+
+---
+
+### 4. Sample: Request with No Matches
+
+```
+Enter choice: 2
+
+Enter your name: Mayank
+Enter required blood group: A-
+Enter your contact info: mayank@xmail.com
+
+Searching for compatible donors...
+
+No compatible donors found at the moment.
+Your request has been recorded. We'll notify you when a match is found.
+```
+
+---
+
+## Features
+
+- Validates all blood groups (O-, O+, A-, A+, B-, B+, AB-, AB+)
+- Accepts aliases like "O Negative", "A Positive", etc.
+- Case-insensitive and whitespace-tolerant inputs
+- Prevents duplicate donor registrations
+- Provides instant donor match suggestions during blood requests
+
+---
+
+## Future Enhancements
+
+- Web UI (React/Firebase or Flask)
+- Location-based filtering and search
+- Email/SMS notifications for matches
+- Admin dashboard for moderation
+- Cloud-hosted database (e.g., Firebase/MongoDB)
+
+---
+
+## Author
+
+**Tanay Verma**  
+Email: tanayverma42004@gmail.com  
+GitHub: [@tanayverma](https://github.com/tanayverma)  
+LinkedIn: [linkedin.com/in/tanay-verma](https://linkedin.com/in/tanay-verma)
+
+---
+
+## License
+
+This project is open-source and free to use. You may extend it for NGOs, hospitals, or educational purposes.
+
