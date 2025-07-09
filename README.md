@@ -1,21 +1,34 @@
-========== BloRidge: Blood Donation System ==========
-1. Register as Donor
-2. Request Blood
-3. View Donors
-4. Exit
-=======================================================
-Enter choice: 1
+# 💉 BloRidge - Blood Donation Match System
 
-Enter your name: Tanay
-Valid blood groups: O-, O+, A-, A+, B-, B+, AB-, AB+
-Enter blood group: O+
-Enter contact info (e.g., phone or email): +918767579049
-Donor registered successfully!
+BloRidge is a real-world C++ console application designed to help donors and receivers connect based on **blood group compatibility**. It handles:
 
-Enter choice: 2
-Enter your name: Divya
-Enter required blood group: AB-
-Enter your contact info (e.g., phone or email): @krx
-Searching for compatible donors...
-No compatible donors found at the moment.
-Your request has been recorded. We'll notify you when a match is found.
+✅ Donor Registration  
+✅ Blood Request & Auto-Matching  
+✅ Contact Selection from Compatible Donors  
+✅ File-based Data Persistence (donors.txt & receivers.txt)  
+✅ Clean, user-friendly CLI experience
+
+---
+
+## 🚀 Features
+
+- 🔄 **Instant Matching:** Matches blood requests to compatible donors in real time
+- 🩸 **Full Blood Group Compatibility** (O-, O+, A-, A+, B-, B+, AB-, AB+)
+- 💾 **Persistent Storage**: All donors and receivers saved in `.txt` files
+- 🔐 **Duplicate Protection**: Prevents re-registration of same donor
+- 📃 **Input Validation**: Case-insensitive, handles both `A+` and `a positive`
+- ✅ **User Experience**: Clean prompts, numbered options, error-proof input
+
+---
+
+## 💻 How to Run
+
+### Requirements:
+- C++ Compiler (e.g., g++)
+- Windows or Linux terminal
+
+### Steps:
+
+```bash
+g++ BloRidge.cpp -o BloRidge.exe    # Compile
+./BloRidge.exe                      # Run
